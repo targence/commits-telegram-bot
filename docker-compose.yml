@@ -3,7 +3,7 @@ version: '3'
 services:
   commits:
     container_name: commits 
-    image: targence/commits
+    image: targence/commits-telegram-bot
     volumes:
       - $PWD/commits.go:/go/src/app/commits.go
       - $PWD/types.go:/go/src/app/types.go   
