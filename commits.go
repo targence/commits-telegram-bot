@@ -25,7 +25,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	log.Printf("Authorized on account %s\n\n", bot.Self.UserName)
+	log.Printf("Authorized on account %s\n", bot.Self.UserName)
 
 	log.Println("Commits bot tarted")
 	http.HandleFunc("/gitlab", gitlabHandler)
