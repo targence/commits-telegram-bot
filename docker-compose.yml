@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  commits:
+    container_name: commits 
+    image: targence/commits
+    volumes:
+      - $PWD/commits.go:/go/src/app/commits.go
+      - $PWD/types.go:/go/src/app/types.go   
+    ports:
+        - "3000:3000"
+    restart: always      
+    env_file: .env      
+    command: go run commits.go types.go
+

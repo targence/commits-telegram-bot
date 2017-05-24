@@ -1,0 +1,6 @@
+.vscode/
+tmp/
+vendor/
+.env
+ASK.md
+build-cn.sh
