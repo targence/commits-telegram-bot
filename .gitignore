@@ -1,6 +1,6 @@
 ASK.md
 .env
-build-cn.sh
+docker-build-cn.sh
 vendor/
 .vscode/
 tmp/

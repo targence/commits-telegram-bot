@@ -3,4 +3,4 @@ tmp/
 vendor/
 .env
 ASK.md
-build-cn.sh
+docker-build-cn.sh
