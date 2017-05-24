@@ -93,6 +93,11 @@ func githubHandler(w http.ResponseWriter, req *http.Request) {
 		panic(err)
 	}
 
+	if api.Zen != nil {
+		log.Println("received test hook request")
+		return
+	}
+
 	var commits string
 	for index, commit := range api.Commits {
 
