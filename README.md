@@ -1,6 +1,6 @@
 Bot sends an every git push event from Github/Gitlab to Telegram chat.  
 
-In Github/Gitlab needs setup webhook url.   
+You need setup a webhook url in Github/Gitlab.   
 For example `http://bot.your-site,com/github` and `http://bot.your-site,com/gitlab`   
 
 
