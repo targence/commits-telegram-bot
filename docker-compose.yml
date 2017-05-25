@@ -14,5 +14,5 @@ services:
         - "3000:3000"
     restart: always      
     env_file: .env      
-    command: go run commits.go types.go github.go gitlab.go
+    command: go run *.go
 

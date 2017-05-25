@@ -13,7 +13,7 @@ https://github.com/organizations/your-company/settings/hooks
 ```
 
 ```
-TG_TOKEN=xxxxxxxx CHAT_ID=xxxxxxxx go run commits.go types.go github.go gitlab.go
+TG_TOKEN=xxxxxxxx CHAT_ID=xxxxxxxx go run *.go
 ```
 
 ```

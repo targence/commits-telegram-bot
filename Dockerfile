@@ -6,5 +6,5 @@ COPY . $WORKDIR
 RUN curl https://glide.sh/get | sh
 RUN glide install
 EXPOSE 3000
-CMD ["go", "run", "commits.go", "types.go", "github.go", "gitlab.go"]
+CMD ["go", "run", "*.go"]
 
