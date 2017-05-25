@@ -26,6 +26,7 @@ docker run -d --restart=always -p "80:3000" -e TG_TOKEN=xxxxxxxx -e CHAT_ID=xxxx
 - add tag_push event
 - add https and and secret token support
 - bypass a non-commits requests (spam, ect)
+- try to use golang templates
 ```
 
 ```

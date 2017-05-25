@@ -27,7 +27,7 @@ func main() {
 
 	log.Printf("Authorized on account %s\n", bot.Self.UserName)
 
-	log.Println("Commits bot tarted")
+	log.Println("Commits bot started")
 	http.HandleFunc("/gitlab", gitlabHandler)
 	http.HandleFunc("/github", githubHandler)
 	// http.HandleFunc("/test", testHandler)

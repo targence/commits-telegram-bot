@@ -6,13 +6,12 @@ services:
     image: targence/commits-telegram-bot
     build: .
     volumes:
-      - $PWD/commits.go:/go/src/app/commits.go
-      - $PWD/types.go:/go/src/app/types.go   
-      - $PWD/commits.go:/go/src/app/github.go
-      - $PWD/types.go:/go/src/app/gitlab.go         
+      - $PWD/commits.go:/go/src/commits/commits.go
+      - $PWD/types.go:/go/src/commits/types.go   
+      - $PWD/github.go:/go/src/commits/github.go
+      - $PWD/gitlab.go:/go/src/commits/gitlab.go         
     ports:
         - "3000:3000"
     restart: always      
     env_file: .env      
-    command: go run *.go
-
+    command: ["/bin/sh", "-c", "go run *.go"]

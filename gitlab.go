@@ -54,11 +54,11 @@ func gitlabHandler(w http.ResponseWriter, req *http.Request) {
 
 	}
 
-	text := fmt.Sprintf("*%s* pushed to *%s of %s* "+
+	text := fmt.Sprintf("*%s* pushed to *%s/%s* "+
 		"[Compare changes](https://gitlab.com/%s/compare/%s...%s)\n"+
 		"%s\n"+
 		"`Total commits: %d`\n",
-		api.UserName, strings.Split(api.Ref, "/")[2], api.Repository.Name,
+		api.UserName, api.Repository.Name, strings.Split(api.Ref, "/")[2],
 		api.Project.PathWithNamespace, api.Before, api.CheckoutSha,
 		commits,
 		api.TotalCommitsCount)
