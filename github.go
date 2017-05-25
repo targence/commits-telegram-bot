@@ -63,7 +63,7 @@ func githubHandler(w http.ResponseWriter, req *http.Request) {
 	text := fmt.Sprintf("*%s* pushed to *%s of %s* "+
 		"[Compare changes](%s)\n"+
 		"%s\n"+
-		"Total commits: %d\n",
+		"`Total commits: %d`\n",
 		api.Pusher.Name, strings.Split(api.Ref, "/")[2], api.Repository.Name,
 		api.Compare,
 		commits,
